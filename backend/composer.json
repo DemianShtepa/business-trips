@@ -47,6 +47,10 @@
         ],
         "post-create-project-cmd": [
             "@php artisan key:generate --ansi"
+        ],
+        "setup": [
+            "composer i",
+            "php artisan d:m:m"
         ]
     },
     "extra": {

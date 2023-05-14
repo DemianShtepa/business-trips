@@ -1,0 +1,23 @@
+App\Domain\Trip\Entity\Trip:
+  type: entity
+  table: trips
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO
+  embedded:
+    perDiem:
+      class: App\Domain\Trip\ValueObject\PerDiem
+  fields:
+    start:
+      type: datetime_immutable
+      column: start_date
+    end:
+      type: datetime_immutable
+      column: end_date
+    country:
+      type: country
+  manyToOne:
+    employee:
+      targetEntity: App\Domain\Employee\Entity\Employee

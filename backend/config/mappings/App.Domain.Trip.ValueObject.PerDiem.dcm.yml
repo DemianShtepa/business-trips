@@ -1,0 +1,7 @@
+App\Domain\Trip\ValueObject\PerDiem:
+  type: embeddable
+  fields:
+    currency:
+      type: currency
+    amount:
+      type: float

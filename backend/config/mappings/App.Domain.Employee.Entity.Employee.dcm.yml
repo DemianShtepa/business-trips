@@ -1,0 +1,8 @@
+App\Domain\Employee\Entity\Employee:
+  type: entity
+  table: employees
+  id:
+    id:
+      type: integer
+      generator:
+        strategy: AUTO

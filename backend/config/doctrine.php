@@ -2,6 +2,9 @@
 
 declare(strict_types=1);
 
+use App\Infrastructure\Doctrine\Type\Country;
+use App\Infrastructure\Doctrine\Type\Currency;
+
 return [
 
     /*
@@ -110,6 +113,8 @@ return [
     |--------------------------------------------------------------------------
     */
     'custom_types'               => [
+        'currency' => Currency::class,
+        'country' => Country::class
     ],
     /*
     |--------------------------------------------------------------------------
